@@ -5,6 +5,10 @@
 cmake_minimum_required(VERSION 3.18)
 project(MeshLab)
 
+if (MSVC)
+    add_compile_options(/utf-8)
+endif()
+
 ### Build options
 option(MESHLAB_BUILD_MINI "Build only common and meshlab - other plugin targets must be set manually" OFF)
 option(MESHLAB_BUILD_STRICT "Strictly enforce resolution of all symbols" ON)
