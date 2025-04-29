@@ -129,7 +129,8 @@ MainWindow::MainWindow() :
 	gpumeminfo = new vcg::QtThreadSafeMemoryInfo(mwsettings.maxgpumem);
 	setAcceptDrops(true);
 	mdiarea->setAcceptDrops(true);
-	setWindowTitle(MeshLabApplication::shortName());
+	setWindowTitle(QStringLiteral("工业3D扫描软件-乾黔科技（海南）有限公司"));
+	//setWindowTitle(MeshLabApplication::shortName());
 	setStatusBar(new QStatusBar(this));
 	globalStatusBar() = statusBar();
 	qb = new QProgressBar(this);
